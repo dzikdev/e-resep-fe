@@ -19,9 +19,9 @@
                     </svg>
                 </span>
             </label>
-            <label class="mt-px font-light text-gray-700 cursor-pointer select-none" :for="checkboxId">
-                Ripple Effect On
-            </label>
+            <div class="cursor-pointer select-none" :for="checkboxId">
+                <slot />
+            </div>
         </div>
     </div>
 </template>
