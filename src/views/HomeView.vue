@@ -1,12 +1,33 @@
 <template>
-  <main>
-    <RCheckbox v-model="isChecked" />
+  <main class="h-screen px-6">
+    <div class="flex flex-col h-screen justify-center items-center gap-y-6">
+      <div class="flex flex-col justify-center items-center gap-y-4">
+        <img :src="Logo" alt="" width="80">
+        <div class="text-2xl">
+          E-Resep
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-center gap-y-4 w-full">
+        <div class="w-full">
+          <RInput v-model="formData.prescription_id" id="" placeholder="Masukkan Nomor E-Resep" />
+        </div>
+        <div class="w-full">
+          <RButton size="md" variant="fill" class="w-full" @click="handleButtonClick">
+            Cari Resep
+          </RButton>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
 <script setup>
-import { ref } from "vue";
-import RCheckbox from "../components/RCheckbox.vue";
+import Logo from '@/assets/images/kemenkes.svg'
+import RInput from "../components/RInput.vue";
+import RButton from "../components/RButton.vue";
 
-const isChecked = ref(false)
+const formData = {
+  prescription_id: null
+}
+
 </script>

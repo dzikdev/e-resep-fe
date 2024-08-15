@@ -4,8 +4,8 @@ import { RouterView } from 'vue-router'
 
 <template>
   <div class="min-h-screen flex justify-center items-center bg-gray-100">
-    <div class="w-[375px] bg-white shadow-2xl rounded-lg border border-gray-200">
-      <div class="p-1">
+    <div class="flex flex-col w-full sm:w-[470px] bg-white shadow-2xl rounded-lg border border-gray-200 min-h-screen">
+      <div class="flex-grow p-1 overflow-y-auto">
         <RouterView />
       </div>
       <!-- Your mobile content goes here -->
