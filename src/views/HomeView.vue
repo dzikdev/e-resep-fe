@@ -23,8 +23,8 @@
 
 <script setup>
 import Logo from '@/assets/images/kemenkes.svg'
-import RInput from "../components/RInput.vue";
-import RButton from "../components/RButton.vue";
+import RInput from "@/components/RInput.vue";
+import RButton from "@/components/RButton.vue";
 
 const formData = {
   prescription_id: null
