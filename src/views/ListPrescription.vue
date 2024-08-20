@@ -1,7 +1,7 @@
 <template>
   <div class="p-5 mb-[120px]">
     <div class="flex flex-col gap-y-5">
-      <div class="flex items-center justify-start">
+      <div class="flex items-center justify-start gap-x-4">
         <img :src="Logo" alt="" width="80">
         <div class="text-xl">
           E-Resep
