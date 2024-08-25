@@ -9,7 +9,7 @@
       </div>
       <div class="flex flex-col justify-center items-center gap-y-4 w-full">
         <div class="w-full">
-          <RInput v-model="formData.prescription_id" id="" placeholder="Masukkan Nomor E-Resep" />
+          <RSearchInput v-model="formData.prescription_id" id="" placeholder="Masukkan Nomor E-Resep" />
         </div>
         <div class="w-full">
           <RButton size="md" variant="fill" class="w-full" @click="handleButtonClick">
@@ -23,7 +23,7 @@
 
 <script setup>
 import Logo from '@/assets/images/kemenkes.svg'
-import RInput from "@/components/RInput.vue";
+import RSearchInput from "@/components/RSearchInput.vue";
 import RButton from "@/components/RButton.vue";
 
 const formData = {
